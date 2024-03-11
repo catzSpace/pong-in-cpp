@@ -1,6 +1,9 @@
+# Pong in c++
 
 clásico juego de pong creado con el lenguaje c++ y la librería de SFML para interfaces gráficas con fines de aprendizaje.
 
+
+![Captura desde 2024-03-07 21-28-38](https://github.com/catzSpace/pong-in-cpp/assets/133279982/fdd70dc0-ec44-4882-878f-6f13cb1999d3)
 
 
 ## Utilización 
