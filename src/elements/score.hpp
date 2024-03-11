@@ -10,13 +10,11 @@ int score2 = 0;
 void score(RenderWindow& window, float xp, float yp){
   
 
-
-
   if (xp <= 2 && yp >= -10 && yp <= 620)
     {
       score2 += 1;
     }
-  if (xp >= 1150 && yp >= -10 && yp <= 620)
+  if (xp >= 1157 && yp >= -10 && yp <= 650)
     {
       score1 += 1;
     }

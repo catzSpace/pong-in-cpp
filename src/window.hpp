@@ -26,13 +26,13 @@ int window(){
   float y = 20;
 
   //player1
-  float pasosU1 = 5;
-  float pasosD1 = 5;
+  float pasosU1 = 3;
+  float pasosD1 = 3;
   float yp1 = 225;
 
   //player2 
-  float pasosU2 = 5;
-  float pasosD2 = 5;
+  float pasosU2 = 3;
+  float pasosD2 = 3;
   float yp2 = 225;
 
   //menu

@@ -1,12 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include "iostream"
+#include <string>
 
 
 using namespace sf;
 using namespace std;
 
-
-void menu(RenderWindow& window)
+void ComponentMenuCreator(RenderWindow& window, Text tittle, string str, int z, int x, int y)
 {
   Font font;
 
@@ -18,31 +18,37 @@ void menu(RenderWindow& window)
   }
 
 
-  Text titulo;
+  tittle.setFont(font);
+  tittle.setString(str);
+  tittle.setCharacterSize(z);
+  tittle.setPosition(x, y);
+  tittle.setFillColor(Color::White);
 
-  titulo.setFont(font);
-  titulo.setString("PonG!");
-  titulo.setCharacterSize(80);
-  titulo.setPosition(440, 260);
-  titulo.setFillColor(Color::White);
+  window.draw(tittle);
+}
+
+void menu(RenderWindow& window)
+{
   
+  // elementos
+  Text titulo;
   Text enter;
-  enter.setFont(font);
-  enter.setString("-Press Enter-");
-  enter.setCharacterSize(17);
-  enter.setPosition(520, 360);
-  enter.setFillColor(Color::White);
+  Text autor;
+  Text version;
 
-  Text Autor;
-  Autor.setFont(font);
-  Autor.setString("CatzSpace");
-  Autor.setCharacterSize(17);
-  Autor.setPosition(20, 10);
-  Autor.setFillColor(Color::White);
+  //str
+  string tx1 = "PonG!";
+  string tx2 = "-Press Enter-";
+  string tx3 = "catzspace";
+  string tx4 = "1.0";
 
+  //render
+  ComponentMenuCreator(window, titulo, tx1, 80, 440, 260);
+  ComponentMenuCreator(window, enter, tx2, 17, 520, 360);
+  ComponentMenuCreator(window, autor, tx3, 17, 20, 17);
+  ComponentMenuCreator(window, version, tx4, 17, 1140, 17);
 
-  window.draw(Autor);
-  window.draw(titulo);
-  window.draw(enter);
   
 }
+
+
