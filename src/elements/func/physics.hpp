@@ -81,5 +81,3 @@ void collP2(float &yp2, float &pasosU2, float &pasosD2)
 
 }
 
-
-

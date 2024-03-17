@@ -23,3 +23,4 @@ void player2(RenderWindow& window, float yp2)
   player2.move(0, yp2);
   window.draw(player2);
 }
+

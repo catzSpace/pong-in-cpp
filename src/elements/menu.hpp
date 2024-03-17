@@ -40,7 +40,7 @@ void menu(RenderWindow& window)
   string tx1 = "PonG!";
   string tx2 = "-Press Enter-";
   string tx3 = "catzspace";
-  string tx4 = "1.0";
+  string tx4 = "1.1";
 
   //render
   ComponentMenuCreator(window, titulo, tx1, 80, 440, 260);

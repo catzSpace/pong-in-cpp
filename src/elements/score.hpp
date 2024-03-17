@@ -42,3 +42,21 @@ void score(RenderWindow& window, float xp, float yp){
 
   window.draw(score);
 }
+
+int gameOver()
+{
+  if (score1 == 10)
+  {
+    cout << "gana el jugador 1" << endl;
+    return 3;
+  }
+  if (score2 == 10)
+  {
+    cout << "gana el jugador 2" << endl;
+    return 4;
+  }
+  else
+  {
+    return 0;
+  }
+}
