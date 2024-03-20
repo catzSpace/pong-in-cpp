@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./src/window.hpp"
+#include "./src/window.cpp"
 
 using namespace std;
 
