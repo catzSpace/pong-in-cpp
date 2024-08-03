@@ -17,7 +17,7 @@ para compilar y ejecutar el proyecto en linux bastará con dirigirse al path pri
 En caso de no funcionar utilizar el comando
 
 ```
-chmod 777 compile.sh
+chmod +x compile.sh
 ```
 
 Para de ese modo adjudicarle los permisos necesarios al script. Una vez creado el archivo ejecutable inserte el comando
